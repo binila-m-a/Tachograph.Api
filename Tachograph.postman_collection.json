@@ -1,0 +1,82 @@
+{
+	"info": {
+		"_postman_id": "f024e7a2-2fb1-4ad8-8cb1-49433c285d42",
+		"name": "Tachograph",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31416410"
+	},
+	"item": [
+		{
+			"name": "Dashboard",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7125/api/Dashboard/GetDashBoarddata",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7125",
+					"path": [
+						"api",
+						"Dashboard",
+						"GetDashBoarddata"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DriverList",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7125/api/Driver/GetDriversList",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7125",
+					"path": [
+						"api",
+						"Driver",
+						"GetDriversList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SaveDriverDailyactivity",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \r\n  \"startTime\": \"2023-11-27T06:53:25.680Z\",\r\n  \"endTime\": \"2023-11-27T06:53:25.680Z\",\r\n  \"driverID\": \"string\",\r\n  \"activity\": \"string\",\r\n  \"insertedOn\": \"2023-11-27T06:53:25.680Z\",\r\n  \"insertedBy\": \"string\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7125/api/Driver/PostDailyDriverActivity",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7125",
+					"path": [
+						"api",
+						"Driver",
+						"PostDailyDriverActivity"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
